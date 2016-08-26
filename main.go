@@ -5,7 +5,7 @@ package main
 import (
     "strconv"
 
-    "github.com/astaxie/beego"
+    //"github.com/astaxie/beego"
 )
 
 // The main function defines a single route, its handler
