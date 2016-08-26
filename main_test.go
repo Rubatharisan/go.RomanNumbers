@@ -9,7 +9,7 @@ func TestSum(t *testing.T) {
         t.Fail()
     }
 
-    if add(3, 5) != 8 {
+    if add(4, 5) != 9 {
         t.Fail()
     }
 
