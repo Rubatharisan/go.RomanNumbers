@@ -1,5 +1,8 @@
 FROM golang:1.6
 
+# Install beego and the bee dev tool
+RUN go get github.com/astaxie/beego && go get github.com/beego/bee
+
 # Create the directory where the application will reside
 RUN mkdir /app
 
@@ -19,3 +22,5 @@ RUN chmod +x /app/MathApp
 
 # Set the entry point of the container to the application executable
 ENTRYPOINT /app/MathApp
+
+CMD ["bee", "run"]
