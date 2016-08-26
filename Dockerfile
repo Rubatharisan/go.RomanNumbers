@@ -4,7 +4,7 @@ FROM golang:1.6
 RUN mkdir /app
 
 # Copy the application files (needed for production)
-ADD MathApp /app/MathApp
+ADD go.RomanNumbers /app/MathApp
 ADD views /app/views
 ADD conf /app/conf
 
