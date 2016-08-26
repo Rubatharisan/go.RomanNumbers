@@ -4,9 +4,9 @@ FROM golang:1.6
 RUN mkdir /app
 
 # Copy the application files (needed for production)
-ADD go.RomanNumbers /app/MathApp
-ADD views /app/views
-ADD conf /app/conf
+ADD MathApp /app/MathApp
+ADD MathApp/views /app/views
+ADD MathApp/conf /app/conf
 
 # Set the working directory to the app directory
 WORKDIR /app
