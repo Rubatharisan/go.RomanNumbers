@@ -18,6 +18,8 @@ WORKDIR /app
 # This should be the same as in the app.conf file
 EXPOSE 8080
 
+RUN ls -l /app/MathApp
+
 RUN chmod +x /app/MathApp
 
 # Set the entry point of the container to the application executable
