@@ -8,6 +8,11 @@ func TestSum(t *testing.T) {
     if add(2, 5) != 7 {
         t.Fail()
     }
+
+    if add(3, 5) != 8 {
+        t.Fail()
+    }
+
     if add(2, 100) != 102 {
         t.Fail()
     }
